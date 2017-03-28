@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="krobertson.howigotstarted">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".UserActivityEx" />
+        <activity android:name=".ChooseMajor" />
+        <activity android:name=".questions.QuestionOne" />
+        <activity android:name=".questions.QuestionTwo" />
+        <activity android:name=".questions.QuestionThree" />
+        <activity android:name=".questions.QuestionFour" />
+        <activity android:name=".questions.QuestionFive" />
+        <activity android:name=".questions.QuestionSix" />
+        <activity android:name=".questions.QuestionSeven" />
+        <activity android:name=".questions.QuestionEight" />
+        <activity android:name=".questions.QuestionNine" />
+        <activity android:name=".questions.QuestionTen" />
+
+        <activity android:name=".UserActivity"></activity>
+    </application>
+
+</manifest>

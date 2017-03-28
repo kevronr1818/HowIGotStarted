@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">How I Got Started</string>
+    <string name="hint_dob">Enter Age</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_gender">I am</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="btn_sign_up">Register !!</string>
+    <string name="err_msg_name">Please enter a Name</string>
+    <string name="err_msg_required">Valid Input Required</string>
+    <string name="err_msg_email">Please enter a Valid Email</string>
+    <string name="err_msg_password">Enter a Password</string>
+    <string name="err_msg_dob">Enter a valid D.O.B</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_link_signup">Don\'t have an account yet Register !!</string>
+    <string name="btn_link_login">Already have an account Login !!</string>
+
+
+    <string name="spinner_prompt">Select your Major</string>
+    <string name="btn_next">Next</string>
+
+    <!-- Strings related to question one -->
+    <string name="hello">Hello World, MyAndroidAppActivity!</string>
+
+    <string name="question_one">What was your household size growing up?</string>
+    <string name="question_one_answer_one">0-2</string>
+    <string name="question_one_answer_two">3-5</string>
+    <string name="question_one_answer_three">6-8</string>
+    <string name="question_one_answer_four">8+</string>
+
+    <!-- Strings related to question two -->
+    <string name="question_two">How are you when it comes to setting and achieving goals?</string>
+    <string name="question_two_answer_one">I set many goals at a time and achieve them all</string>
+    <string name="question_two_answer_two">I set many goals at a time and achieve as many as I can</string>
+    <string name="question_two_answer_three">I set goals little by little and achieve what I can</string>
+    <string name="question_two_answer_four">I do not set goals as I just aim to do my best no matter the outcome</string>
+
+    <!-- Strings related to question three -->
+    <string name="question_three">Which of the following do you get most of your inspiration from?</string>
+    <string name="question_three_answer_one">Instructor/Former Instructor</string>
+    <string name="question_three_answer_two">Musician</string>
+    <string name="question_three_answer_three">Parent(s)/Relatives</string>
+    <string name="question_three_answer_four">Co-workers</string>
+
+    <!-- Strings related to question four -->
+    <string name="question_four">When faced with a problem, what are your tendencies to solve it?</string>
+    <string name="question_four_answer_one">Attempt to solve the problem as soon as possible</string>
+    <string name="question_four_answer_two">Think about the different ways to solve the problem before attempting to solve it</string>
+    <string name="question_four_answer_three">Ask people for help before attempting to solve it</string>
+    <string name="question_four_answer_four">Let the problem "solve" itself</string>
+
+    <!-- Strings related to question five -->
+    <string name="question_five">Which best describes when you generally show up to where you need to be? (Be Honest)</string>
+    <string name="question_five_answer_one">Early</string>
+    <string name="question_five_answer_two">On Time</string>
+    <string name="question_five_answer_three">Late (5 minutes or less)</string>
+    <string name="question_five_answer_four">Late (10+ minutes)</string>
+
+    <!-- Strings related to question six -->
+    <string name="question_six">How are you when it comes to going about your day?</string>
+    <string name="question_six_answer_one">Everything must be planned out the whole day</string>
+    <string name="question_six_answer_two">Some things are planned out and some things are winged (spur of the moment)</string>
+    <string name="question_six_answer_three">Most things are winged but occasionally things are planned out</string>
+    <string name="question_six_answer_four"> I do as I feel (everything is winged)</string>
+
+    <!-- Strings related to question seven -->
+    <string name="question_seven">If you had to take a vacation for a week, where would you go out of these choices?</string>
+    <string name="question_seven_answer_one">Orlando,FL</string>
+    <string name="question_seven_answer_two">New York,NY</string>
+    <string name="question_seven_answer_three">Los Angeles,CA</string>
+    <string name="question_seven_answer_four">Dallas,TX</string>
+
+    <!-- Strings related to question eight -->
+    <string name="question_eight">How is your approach when dealing with people?</string>
+    <string name="question_eight_answer_one">Inflexible</string>
+    <string name="question_eight_answer_two">Dominating</string>
+    <string name="question_eight_answer_three">Adaptable</string>
+    <string name="question_eight_answer_four">Manipulating</string>
+
+    <!-- Strings related to question nine -->
+    <string name="question_nine">Which best describes how others would others describe you?</string>
+    <string name="question_nine_answer_one">Malleable</string>
+    <string name="question_nine_answer_two">Personable</string>
+    <string name="question_nine_answer_three">Intractable</string>
+    <string name="question_nine_answer_four">Objectionable</string>
+
+    <!-- Strings related to question ten -->
+    <string name="question_ten">While taking this assessment, which best describes your general thoughts?</string>
+    <string name="question_ten_answer_one">"Why do I have to take this?"</string>
+    <string name="question_ten_answer_two">"These are some interesting questions" </string>
+    <string name="question_ten_answer_three">"I have to do (insert thing here) after I finish this"</string>
+    <string name="question_ten_answer_four">"Maybe I should work on (insert aspect/trait here) more"</string>
+</resources>
