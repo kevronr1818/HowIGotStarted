@@ -19,8 +19,9 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/radioQuestions"
         android:layout_marginTop="56dp"
-        android:onClick="nextButtonClicked"
-        android:text="@string/btn_next" />
+        android:background="@color/colorAccent"
+        android:text="@string/btn_next"
+        android:textColor="@color/white" />
 
     <RadioGroup
         android:id="@+id/radioQuestions"

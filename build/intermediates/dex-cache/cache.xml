@@ -12,15 +12,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Kevron\.android\build-cache\0ef7c54c5c041737dfb5c3ad497c8fbaf248c72e\output\jars\libs\internal_impl-23.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="C:\Users\Kevron\AndroidStudioProjects\HowIGotStarted\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_66070d0416043289c817ebc105bf3c8121312e2d.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Kevron\.android\build-cache\db9c3983b74beb67ae1962f3e6b0fc8de86a2c9f\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -39,15 +30,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Kevron\.android\build-cache\0ef7c54c5c041737dfb5c3ad497c8fbaf248c72e\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="C:\Users\Kevron\AndroidStudioProjects\HowIGotStarted\app\build\intermediates\pre-dexed\debug\classes_576fd9214410bf7611927e84a6387a4f1deb507c.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Kevron\.android\build-cache\515cc6c0a90b0378e9b080a05233d55171e2ba75\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -57,12 +39,30 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\Kevron\.android\build-cache\9ed4c779c520400124bcb523025f0cc1a26bd532\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="C:\Users\Kevron\AndroidStudioProjects\HowIGotStarted\app\build\intermediates\pre-dexed\debug\classes_2326463cca9d1e5268797ac24077bc6ab3293858.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Kevron\.android\build-cache\681db6390cdc2a3c9f6d4108a38d61cae14d609a\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
         <dex dex="C:\Users\Kevron\AndroidStudioProjects\AndroidLogin\app\build\intermediates\pre-dexed\debug\classes_45d0ccf23b85f309caf01e26461f4ff701d3b401.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kevron\.android\build-cache\a5c8ab382b220ee1d8797184f4f561e9179ebd35\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="C:\Users\Kevron\AndroidStudioProjects\HowIGotStarted\app\build\intermediates\pre-dexed\debug\classes_9620d830bac04e6c4e9cc6e427d8dafb4898471b.jar" />
     </item>
     <item
         is-multidex="false"
@@ -93,6 +93,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\Kevron\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0\support-annotations-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="C:\Users\Kevron\AndroidStudioProjects\HowIGotStarted\app\build\intermediates\pre-dexed\debug\support-annotations-24.0.0_0d8f8833e853ae753c828ae9783ccc5a6b945b36.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Kevron\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
         jumboMode="false"
         optimize="true"
@@ -102,30 +111,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Kevron\.android\build-cache\c632e93956b71ff755d465f105d509f7f18cb065\output\jars\classes.jar"
+        jar="C:\Users\Kevron\.android\build-cache\2dc3c6d949ebb820bcda6e84c1f45d441aa4fa67\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="C:\Users\Kevron\AndroidStudioProjects\HowIGotStarted\app\build\intermediates\pre-dexed\debug\classes_b86b5364ad17021abdc85c7e83638f4a22dacc8d.jar" />
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="C:\Users\Kevron\AndroidStudioProjects\HowIGotStarted\app\build\intermediates\pre-dexed\debug\classes_bc649b555756c3d809719d821d4503e2fca5cfb7.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Kevron\.android\build-cache\a012cccc90a1c49f7d0b8cb87ff4f54746e42a5a\output\jars\classes.jar"
+        jar="C:\Users\Kevron\.android\build-cache\f6a4363e5df52ef276013c2102f3d89614786a84\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="C:\Users\Kevron\AndroidStudioProjects\HowIGotStarted\app\build\intermediates\pre-dexed\debug\classes_fae837e37856b25b59cb6dea38eb06ac55ef3cbb.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Kevron\.android\build-cache\bf49aa91259cbcb9300a8d557f543a4de6e94986\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="C:\Users\Kevron\AndroidStudioProjects\HowIGotStarted\app\build\intermediates\pre-dexed\debug\classes_7a0b8e9c473e456f1d73805f16e4401177d0facb.jar" />
+        sha1="fc29308a7a8f6d4407b34634eb48fb8b817f9b23">
+        <dex dex="C:\Users\Kevron\AndroidStudioProjects\HowIGotStarted\app\build\intermediates\pre-dexed\debug\classes_90f313f05d70cdd32e5ccc1d69d18215b2a23d26.jar" />
     </item>
     <item
         is-multidex="false"
@@ -138,12 +138,30 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Kevron\.android\build-cache\3ad6e28dd2285ab0b7c30680e9186a3a24d07073\output\jars\classes.jar"
+        jar="C:\Users\Kevron\.android\build-cache\b70eaf92c5cfe44e9acd5d8e9a3835b6c7f7b5ea\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="8a5238e4bdcd6568b82db669d41817de670586b8">
-        <dex dex="C:\Users\Kevron\AndroidStudioProjects\HowIGotStarted\app\build\intermediates\pre-dexed\debug\classes_9814157ea10f3f35b6f323a47372b00ca2f9d5c8.jar" />
+        sha1="894922f67adeaaef51f077a29e315da21a3382d3">
+        <dex dex="C:\Users\Kevron\AndroidStudioProjects\HowIGotStarted\app\build\intermediates\pre-dexed\debug\classes_76996eb32f2d63c78f8d7e0e71380d890d824ce7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kevron\.android\build-cache\2b7072a9137064a832da1a06dbf1452a6c5a0007\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="C:\Users\Kevron\AndroidStudioProjects\HowIGotStarted\app\build\intermediates\pre-dexed\debug\classes_9b1579528bb13ef71450ce3a786e9d7c2f25bb6f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kevron\.android\build-cache\a5c8ab382b220ee1d8797184f4f561e9179ebd35\output\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="C:\Users\Kevron\AndroidStudioProjects\HowIGotStarted\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_afd7d8f2b3dda646657d72d66f5e3688d43f933d.jar" />
     </item>
 
 </items>

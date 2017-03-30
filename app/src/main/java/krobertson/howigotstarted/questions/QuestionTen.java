@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import krobertson.howigotstarted.R;
 import krobertson.howigotstarted.UserActivity;
+import krobertson.howigotstarted.UserActivityEx;
 
 public class QuestionTen extends AppCompatActivity {
 
@@ -25,6 +26,7 @@ public class QuestionTen extends AppCompatActivity {
         setContentView(R.layout.activity_question_ten);
 
         addButtonListener();
+        //nextButtonClicked();
         //startActivity(new Intent("krobertson.howigotstarted.questions.QuestionTen"));
 
     }
@@ -39,14 +41,10 @@ public class QuestionTen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                // get selected radio button from radioGroup
-                int selectedId = radioQuestionTen.getCheckedRadioButtonId();
-
-                // find the radiobutton by returned id
-                radioAnswerButton = (RadioButton) findViewById(selectedId);
-
-                Toast.makeText(QuestionTen.this,
-                        radioAnswerButton.getText(), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(QuestionTen.this, UserActivity.class);
+                //intent.putExtra("username", user);
+                startActivity(intent);
+                finish();
 
             }
 
@@ -54,12 +52,7 @@ public class QuestionTen extends AppCompatActivity {
 
     }
 
-    public void nextButtonClicked(){
-        Intent intent = new Intent(QuestionTen.this, UserActivity.class);
-        //intent.putExtra("username", user);
-        startActivity(intent);
-        finish();
-    }
+
 
 
 

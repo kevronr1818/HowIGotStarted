@@ -18,8 +18,9 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/radioQuestions"
         android:layout_marginTop="56dp"
-        android:onClick="nextButtonClicked"
-        android:text="@string/btn_next" />
+        android:background="@color/colorAccent"
+        android:text="@string/btn_next"
+        android:textColor="@color/white" />
 
     <RadioGroup
         android:id="@+id/radioQuestions"
@@ -72,10 +73,9 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/radioQuestions"
-        android:layout_alignRight="@+id/radioQuestions"
+        android:layout_marginTop="46dp"
+        android:text="9/10"
         android:layout_below="@+id/btn_next"
-        android:layout_marginTop="38dp"
-        android:text="9/10" />
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

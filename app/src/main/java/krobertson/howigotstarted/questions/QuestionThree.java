@@ -24,6 +24,7 @@ public class QuestionThree extends AppCompatActivity {
         setContentView(R.layout.activity_question_three);
 
         addButtonListener();
+        //nextButtonClicked();
         //startActivity(new Intent("krobertson.howigotstarted.questions.QuestionThree"));
 
     }
@@ -38,14 +39,10 @@ public class QuestionThree extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                // get selected radio button from radioGroup
-                int selectedId = radioQuestionThree.getCheckedRadioButtonId();
-
-                // find the radiobutton by returned id
-                radioAnswerButton = (RadioButton) findViewById(selectedId);
-
-                Toast.makeText(QuestionThree.this,
-                        radioAnswerButton.getText(), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(QuestionThree.this, QuestionFour.class);
+                //intent.putExtra("username", user);
+                startActivity(intent);
+                finish();
 
             }
 
@@ -53,11 +50,6 @@ public class QuestionThree extends AppCompatActivity {
 
     }
 
-    public void nextButtonClicked(){
-        Intent intent = new Intent(QuestionThree.this, QuestionFour.class);
-        //intent.putExtra("username", user);
-        startActivity(intent);
-        finish();
-    }
+
 
 }
