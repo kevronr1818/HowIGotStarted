@@ -88,7 +88,7 @@ public class RegisterActivity extends AppCompatActivity {
         // Tag used to cancel the request
         String cancel_req_tag = "register";
 
-        progressDialog.setMessage("Adding you ...");
+        progressDialog.setMessage("Just one moment ...");
         showDialog();
 
         StringRequest strReq = new StringRequest(Request.Method.POST,
@@ -105,7 +105,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                     if (!error) {
                         String user = jObj.getJSONObject("user").getString("name");
-                        Toast.makeText(getApplicationContext(), "Hi " + user +", You are successfully Added!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Hi " + user +", You are successfully added!", Toast.LENGTH_SHORT).show();
 
                         // Launch login activity
                         Intent intent = new Intent(

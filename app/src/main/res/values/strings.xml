@@ -51,7 +51,7 @@
     <string name="question_four_answer_four">Let the problem "solve" itself</string>
 
     <!-- Strings related to question five -->
-    <string name="question_five">Which best describes when you generally show up to where you need to be? (Be Honest)</string>
+    <string name="question_five">Which best describes when you generally show up to where you need to be?</string>
     <string name="question_five_answer_one">Early</string>
     <string name="question_five_answer_two">On Time</string>
     <string name="question_five_answer_three">Late (5 minutes or less)</string>
@@ -93,5 +93,5 @@
     <string name="question_ten_answer_four">"Maybe I should work on (insert aspect/trait here) more"</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">Welcome!</string>
 </resources>
