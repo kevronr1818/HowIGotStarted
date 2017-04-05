@@ -42,7 +42,7 @@ public class UserActivity extends AppCompatActivity {
         adapter.addFragment(new OneFragment(), "HOME");
         adapter.addFragment(new TwoFragment(), "MESSAGES");
         adapter.addFragment(new ThreeFragment(), "MATCHES");
-        adapter.addFragment(new FourFragment(), "RESOURCES");
+        adapter.addFragment(new FourFragment(), "ADDITIONAL RESOURCES");
         viewPager.setAdapter(adapter);
     }
 

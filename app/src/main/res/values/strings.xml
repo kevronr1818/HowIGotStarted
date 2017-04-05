@@ -94,4 +94,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Welcome!</string>
+
+
+    <string name ="explain_resources">Additional resources can be found below!</string>
 </resources>

@@ -32,26 +32,21 @@ public class FourFragment extends Fragment{
                              Bundle savedInstanceState) {
 
 
-        setResourceLinks();
+        //setResourceLinks();
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_four, container, false);
+        View v = inflater.inflate(R.layout.fragment_four, container, false);
+        Button resourceLinkOne = (Button) v.findViewById(R.id.btn_resourceLinkOne);
+        Button resourceLinkTwo = (Button) v.findViewById(R.id.btn_resourceLinkTwo);
+        Button resourceLinkThree = (Button) v.findViewById(R.id.btn_resourceLinkThree);
+        Button resourceLinkFour = (Button) v.findViewById(R.id.btn_resourceLinkFour);
 
-
-
-    }
-
-    public void setResourceLinks() {
-        Button resourceLinkOne = (Button) getActivity().findViewById(R.id.btn_resourceLinkOne);
-        Button resourceLinkTwo = (Button) getActivity().findViewById(R.id.btn_resourceLinkTwo);
-        Button resourceLinkThree = (Button) getActivity().findViewById(R.id.btn_resourceLinkThree);
-        Button resourceLinkFour = (Button) getActivity().findViewById(R.id.btn_resourceLinkFour);
         resourceLinkOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent sendToLinkOne = new Intent();
                 sendToLinkOne.setAction(Intent.ACTION_VIEW);
                 sendToLinkOne.addCategory(Intent.CATEGORY_BROWSABLE);
-                sendToLinkOne.setData(Uri.parse("http://www.youtube.com"));
+                sendToLinkOne.setData(Uri.parse("http://www.yahoo.com"));
                 startActivity(sendToLinkOne);
             }
         });
@@ -61,7 +56,7 @@ public class FourFragment extends Fragment{
                 Intent sendToLinkTwo = new Intent();
                 sendToLinkTwo.setAction(Intent.ACTION_VIEW);
                 sendToLinkTwo.addCategory(Intent.CATEGORY_BROWSABLE);
-                sendToLinkTwo.setData(Uri.parse("http://www.facebook.com"));
+                sendToLinkTwo.setData(Uri.parse("http://www.bing.com"));
                 startActivity(sendToLinkTwo);
             }
         });
@@ -71,7 +66,7 @@ public class FourFragment extends Fragment{
                 Intent sendToLinkThree = new Intent();
                 sendToLinkThree.setAction(Intent.ACTION_VIEW);
                 sendToLinkThree.addCategory(Intent.CATEGORY_BROWSABLE);
-                sendToLinkThree.setData(Uri.parse("http://www.twitter.com"));
+                sendToLinkThree.setData(Uri.parse("http://www.ask.com"));
                 startActivity(sendToLinkThree);
             }
         });
@@ -85,7 +80,12 @@ public class FourFragment extends Fragment{
                 startActivity(sendToLinkFour);
             }
         });
+        return v;
+
+
 
     }
+
+
 
 }

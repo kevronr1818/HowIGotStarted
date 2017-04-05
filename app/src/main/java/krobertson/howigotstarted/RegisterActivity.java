@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -32,6 +33,7 @@ public class RegisterActivity extends AppCompatActivity {
     private Button btnSignUp;
     private Button btnLinkLogin;
     private RadioGroup genderRadioGroup;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

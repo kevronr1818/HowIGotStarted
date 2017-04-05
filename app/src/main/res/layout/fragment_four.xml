@@ -32,31 +32,33 @@
         android:id="@+id/btn_resourceLinkTwo"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
         android:background="@null"
         android:text="Link Two"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/btn_resourceLinkOne"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/btn_resourceLinkOne"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="179dp"
+        android:layout_marginTop="39dp"
         android:background="@null"
         android:text="Link One"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/txtExplainResource"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/txtExplainResource"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/explain_resources"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="63dp"
-        android:text="TextView" />
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
