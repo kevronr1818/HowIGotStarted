@@ -97,4 +97,8 @@
 
 
     <string name ="explain_resources">Additional resources can be found below!</string>
+
+    <string name="upload_picture">Upload Picture</string>
+    <string name="show_name">Welcome User!</string>
+    <string name="btn_sign_out">Sign Out</string>
 </resources>
