@@ -27,6 +27,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     private static final String TAG = "RegisterActivity";
     private static final String URL_FOR_REGISTRATION = "http://kevronr.netai.net/register.php";
+    private OneFragment oneFragment;
     ProgressDialog progressDialog;
 
     private EditText signupInputName, signupInputEmail, signupInputPassword, signupInputAge;
@@ -67,6 +68,12 @@ public class RegisterActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        Bundle bundle = new Bundle();
+        bundle.putString("userName", signupInputName.getText().toString());
+
+        //Get username into OneFragment class
+        oneFragment = new OneFragment();
+        oneFragment.setArguments(bundle);
     }
 
     private void submitForm() {
@@ -107,6 +114,8 @@ public class RegisterActivity extends AppCompatActivity {
 
                     if (!error) {
                         String user = jObj.getJSONObject("user").getString("name");
+
+
                         Toast.makeText(getApplicationContext(), "Hi " + user +", You are successfully added!", Toast.LENGTH_SHORT).show();
 
                         // Launch login activity

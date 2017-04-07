@@ -17,15 +17,23 @@ import android.provider.MediaStore;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 public class OneFragment extends Fragment{
+
+    private static final String TAG = "FragmentOne";
+    private static int RESULT_LOAD_IMAGE = 1;
+
+    private TextView greetingTextView;
+    private Button btnLogOut;
+
 
     public OneFragment() {
         // Required empty public constructor
     }
 
-    private static int RESULT_LOAD_IMAGE = 1;
+
 
 
     @Override
@@ -41,6 +49,20 @@ public class OneFragment extends Fragment{
         // Inflate the layout for this fragment
 
         View v = inflater.inflate(R.layout.fragment_one, container, false);
+
+        //String user = getArguments().getString("userName");
+        greetingTextView = (TextView) v.findViewById(R.id.greeting_text_view);
+        btnLogOut = (Button) v.findViewById(R.id.logout_button);
+        greetingTextView.setText("Welcome!");
+
+        btnLogOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity().getApplicationContext(), LoginActivity.class);
+                startActivity(i);
+            }
+        });
+
 
         Button buttonLoadImage = (Button) v.findViewById(R.id.buttonLoadPicture);
         buttonLoadImage.setOnClickListener(new View.OnClickListener() {

@@ -73,9 +73,9 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="10/10"
         android:layout_below="@+id/btn_next"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp"
-        android:text="10/10" />
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
