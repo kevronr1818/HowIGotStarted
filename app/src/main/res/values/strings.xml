@@ -6,7 +6,7 @@
     <string name="hint_gender">I am</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
-    <string name="btn_sign_up">Register !!</string>
+    <string name="btn_sign_up">Register!</string>
     <string name="err_msg_name">Please enter a Name</string>
     <string name="err_msg_required">Valid Input Required</string>
     <string name="err_msg_email">Please enter a Valid Email</string>
@@ -40,20 +40,20 @@
     <string name="question_three">Which of the following do you get most of your inspiration from?</string>
     <string name="question_three_answer_one">Instructor/Former Instructor</string>
     <string name="question_three_answer_two">Musician</string>
-    <string name="question_three_answer_three">Parent(s)/Relatives</string>
-    <string name="question_three_answer_four">Co-workers</string>
+    <string name="question_three_answer_three">Parents/Relatives</string>
+    <string name="question_three_answer_four">Co-worker</string>
 
     <!-- Strings related to question four -->
     <string name="question_four">When faced with a problem, what are your tendencies to solve it?</string>
     <string name="question_four_answer_one">Attempt to solve the problem as soon as possible</string>
     <string name="question_four_answer_two">Think about the different ways to solve the problem before attempting to solve it</string>
     <string name="question_four_answer_three">Ask people for help before attempting to solve it</string>
-    <string name="question_four_answer_four">Let the problem "solve" itself</string>
+    <string name="question_four_answer_four">Let the problem solve itself</string>
 
     <!-- Strings related to question five -->
     <string name="question_five">Which best describes when you generally show up to where you need to be?</string>
     <string name="question_five_answer_one">Early</string>
-    <string name="question_five_answer_two">On Time</string>
+    <string name="question_five_answer_two">On time</string>
     <string name="question_five_answer_three">Late (5 minutes or less)</string>
     <string name="question_five_answer_four">Late (10+ minutes)</string>
 
@@ -94,6 +94,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Welcome!</string>
+
+    <string name="compose_email">Compose Message</string>
 
 
     <string name ="explain_resources">Additional resources can be found below!</string>
