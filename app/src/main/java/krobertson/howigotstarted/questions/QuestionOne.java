@@ -28,9 +28,6 @@ public class QuestionOne extends AppCompatActivity {
         setContentView(R.layout.activity_question_one);
 
         addButtonListener();
-
-        //startActivity(new Intent("krobertson.howigotstarted.questions.QuestionOne"));
-
     }
 
     public void addButtonListener() {
@@ -51,16 +48,5 @@ public class QuestionOne extends AppCompatActivity {
             }
 
         });
-
     }
-/*
-    public void nextButtonClicked(){
-        Intent intent = new Intent(QuestionOne.this, QuestionTwo.class);
-        //intent.putExtra("username", user);
-        startActivity(intent);
-        finish();
-    }
-
-    */
-
 }

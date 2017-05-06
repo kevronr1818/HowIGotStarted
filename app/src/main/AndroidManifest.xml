@@ -21,7 +21,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".UserActivityEx" />
         <activity android:name=".ChooseMajor" />
         <activity android:name=".questions.QuestionOne" />
         <activity android:name=".questions.QuestionTwo" />

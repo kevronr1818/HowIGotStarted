@@ -1,3 +1,9 @@
+/*
+Source: https://www.androidtutorialpoint.com/androidwithphp/login-and-registration-form-in-android/
+
+This class is responsible for handling the functionality of the sign up screen.
+ */
+
 package krobertson.howigotstarted;
 
 import android.app.ProgressDialog;
@@ -9,7 +15,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -20,14 +25,11 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-import krobertson.howigotstarted.R;
-
-
 public class RegisterActivity extends AppCompatActivity {
 
     private static final String TAG = "RegisterActivity";
     private static final String URL_FOR_REGISTRATION = "http://kevronr.netai.net/register.php";
-    private OneFragment oneFragment;
+    private HomeFragment homeFragment;
     ProgressDialog progressDialog;
 
     private EditText signupInputName, signupInputEmail, signupInputPassword, signupInputAge;
@@ -68,12 +70,12 @@ public class RegisterActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        //Gets username into HomeFragment.java
         Bundle bundle = new Bundle();
         bundle.putString("userName", signupInputName.getText().toString());
-
-        //Get username into OneFragment class
-        oneFragment = new OneFragment();
-        oneFragment.setArguments(bundle);
+        homeFragment = new HomeFragment();
+        homeFragment.setArguments(bundle);
     }
 
     private void submitForm() {
@@ -100,6 +102,7 @@ public class RegisterActivity extends AppCompatActivity {
         progressDialog.setMessage("Just one moment ...");
         showDialog();
 
+        //Creates new request using the register URL
         StringRequest strReq = new StringRequest(Request.Method.POST,
                 URL_FOR_REGISTRATION, new Response.Listener<String>() {
 
@@ -114,8 +117,6 @@ public class RegisterActivity extends AppCompatActivity {
 
                     if (!error) {
                         String user = jObj.getJSONObject("user").getString("name");
-
-
                         Toast.makeText(getApplicationContext(), "Hi " + user +", You are successfully added!", Toast.LENGTH_SHORT).show();
 
                         // Launch login activity
@@ -125,7 +126,7 @@ public class RegisterActivity extends AppCompatActivity {
                         startActivity(intent);
                         finish();
                     } else {
-
+                        //Show error message
                         String errorMsg = jObj.getString("error_msg");
                         Toast.makeText(getApplicationContext(),
                                 errorMsg, Toast.LENGTH_LONG).show();
@@ -170,5 +171,4 @@ public class RegisterActivity extends AppCompatActivity {
         if (progressDialog.isShowing())
             progressDialog.dismiss();
     }
-
 }

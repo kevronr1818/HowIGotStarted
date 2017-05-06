@@ -1,3 +1,9 @@
+/*
+Source: https://www.androidtutorialpoint.com/androidwithphp/login-and-registration-form-in-android/
+
+This class is responsible for handling the functionality of the login screen.
+ */
+
 package krobertson.howigotstarted;
 
 import android.app.ProgressDialog;
@@ -36,6 +42,7 @@ public class LoginActivity extends AppCompatActivity {
         loginInputPassword = (EditText) findViewById(R.id.login_input_password);
         btnlogin = (Button) findViewById(R.id.btn_login);
         btnLinkSignup = (Button) findViewById(R.id.btn_link_signup);
+
         // Progress dialog
         progressDialog = new ProgressDialog(this);
         progressDialog.setCancelable(false);
@@ -62,6 +69,7 @@ public class LoginActivity extends AppCompatActivity {
         String cancel_req_tag = "login";
         progressDialog.setMessage("Logging you in...");
         showDialog();
+        //Creates new request using the login URL
         StringRequest strReq = new StringRequest(Request.Method.POST,
                 URL_FOR_LOGIN, new Response.Listener<String>() {
 
@@ -74,16 +82,14 @@ public class LoginActivity extends AppCompatActivity {
                     boolean error = jObj.getBoolean("error");
 
                     if (!error) {
-                        //String user = jObj.getJSONObject("user").getString("name");
-                        // Launch activity
+                        // Launch ChooseMajor.java
                         Intent intent = new Intent(
                                 LoginActivity.this,
                                 ChooseMajor.class);
-                        //intent.putExtra("username", user);
                         startActivity(intent);
                         finish();
                     } else {
-
+                        //Show error message
                         String errorMsg = jObj.getString("error_msg");
                         Toast.makeText(getApplicationContext(),
                                 errorMsg, Toast.LENGTH_LONG).show();
@@ -128,5 +134,3 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 }
-
-

@@ -1,3 +1,10 @@
+/*
+Source: https://www.androidtutorialpoint.com/androidwithphp/login-and-registration-form-in-android/
+
+This class is responsible for making the requests to send data to the server and retrieve data from the server
+This class is used in LoginActivity.java and RegisterActivity.java
+ */
+
 package krobertson.howigotstarted;
 
 import android.content.Context;
@@ -24,8 +31,6 @@ public class AppSingleton {
 
     public RequestQueue getRequestQueue() {
         if (mRequestQueue == null) {
-            // getApplicationContext() is key, it keeps you from leaking the
-            // Activity or BroadcastReceiver if someone passes one in.
             mRequestQueue = Volley.newRequestQueue(mContext.getApplicationContext());
         }
         return mRequestQueue;
