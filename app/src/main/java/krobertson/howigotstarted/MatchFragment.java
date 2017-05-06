@@ -1,28 +1,27 @@
+/*
+Source: https://www.androidtutorialpoint.com/androidwithphp/login-and-registration-form-in-android/
+
+This class is responsible for showing who the user matched with and has mostly the same
+implementation as LoginActivity.java and RegisterActivity.java
+ */
 package krobertson.howigotstarted;
 
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.util.HashMap;
 import java.util.Map;
-import krobertson.howigotstarted.AppSingleton;
 
 public class MatchFragment extends Fragment{
     private static final String TAG = "MatchFragment";
@@ -44,7 +43,7 @@ public class MatchFragment extends Fragment{
                              Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_three, container, false);
+        View v = inflater.inflate(R.layout.fragment_match, container, false);
         txtMatches = (TextView) v.findViewById(R.id.txtMatches);
 
         String cancel_req_tag = "matches";
@@ -62,11 +61,12 @@ public class MatchFragment extends Fragment{
                     boolean error = jObj.getBoolean("error");
 
                     if (!error) {
+                        //Display a message to the user that tells them the matches are displayed
                         String user = jObj.getJSONObject("user").getString("name");
                         Toast.makeText(getActivity().getApplicationContext(), "Hi " + user +", These are your matches!", Toast.LENGTH_SHORT).show();
 
                     } else {
-
+                        //Display a error message
                         String errorMsg = jObj.getString("error_msg");
                         Toast.makeText(getActivity().getApplicationContext(),
                                 errorMsg, Toast.LENGTH_LONG).show();
@@ -98,11 +98,5 @@ public class MatchFragment extends Fragment{
         AppSingleton.getInstance(getActivity().getApplicationContext()).addToRequestQueue(strReq, cancel_req_tag);
 
         return v;
-
     }
-
-
-
-
-
 }

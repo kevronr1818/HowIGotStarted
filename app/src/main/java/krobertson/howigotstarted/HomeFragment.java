@@ -1,24 +1,25 @@
+/*
+Source: http://www.theappguruz.com/blog/android-take-photo-camera-gallery-code-sample. Step 3.
+
+This class is responsible for handling what happens in the "Home" tab of the application. The
+"Home" tab allows for the user to upload a profile picture as well as log out of the application
+ */
+
 package krobertson.howigotstarted;
 
-import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.BitmapFactory;
-import android.net.Uri;
-import android.os.Bundle;
 import android.provider.MediaStore;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
-
 
 public class HomeFragment extends Fragment{
 
@@ -28,33 +29,26 @@ public class HomeFragment extends Fragment{
     private TextView greetingTextView;
     private Button btnLogOut;
 
-
     public HomeFragment() {
         // Required empty public constructor
     }
 
-
-
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        View v = inflater.inflate(R.layout.fragment_home, container, false);
 
-        View v = inflater.inflate(R.layout.fragment_one, container, false);
-
-        //String user = getArguments().getString("userName");
         greetingTextView = (TextView) v.findViewById(R.id.greeting_text_view);
         btnLogOut = (Button) v.findViewById(R.id.logout_button);
         greetingTextView.setText("Welcome!");
 
+        //Take user back to Login screen once the user clicks the "Sign Out" button
         btnLogOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,7 +57,7 @@ public class HomeFragment extends Fragment{
             }
         });
 
-
+        //Takes user to Camera gallery once the user clicks the "Upload Picture" button
         Button buttonLoadImage = (Button) v.findViewById(R.id.buttonLoadPicture);
         buttonLoadImage.setOnClickListener(new View.OnClickListener() {
 
@@ -100,9 +94,5 @@ public class HomeFragment extends Fragment{
             imageButton.setImageBitmap(BitmapFactory.decodeFile(picturePath));
 
         }
-
-
     }
-
-
 }

@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import krobertson.howigotstarted.R;
 import krobertson.howigotstarted.UserActivity;
-import krobertson.howigotstarted.UserActivityEx;
+
 
 public class QuestionTen extends AppCompatActivity {
 
