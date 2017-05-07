@@ -1,3 +1,10 @@
+/**
+ *
+ *This class is responsible for handling the functionality of the tenth question.
+ * Once the user selects an answer and clicks the "Next" button, the user will be
+ * taken to the "Home" tab, which is a fragment of UserActivity.java
+ */
+
 package krobertson.howigotstarted.questions;
 
 import android.content.Intent;
@@ -8,11 +15,9 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
 import krobertson.howigotstarted.R;
 import krobertson.howigotstarted.UserActivity;
-
 
 public class QuestionTen extends AppCompatActivity {
 
@@ -26,11 +31,10 @@ public class QuestionTen extends AppCompatActivity {
         setContentView(R.layout.activity_question_ten);
 
         addButtonListener();
-        //nextButtonClicked();
-        //startActivity(new Intent("krobertson.howigotstarted.questions.QuestionTen"));
-
     }
-
+    /*Once the "Next" button is clicked, this method is responsible for making sure the next
+    screen is the UserActivity.java class
+     */
     public void addButtonListener() {
 
         radioQuestionTen = (RadioGroup) findViewById(R.id.radioQuestions);
@@ -42,18 +46,10 @@ public class QuestionTen extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(QuestionTen.this, UserActivity.class);
-                //intent.putExtra("username", user);
                 startActivity(intent);
                 finish();
-
             }
 
         });
-
     }
-
-
-
-
-
 }

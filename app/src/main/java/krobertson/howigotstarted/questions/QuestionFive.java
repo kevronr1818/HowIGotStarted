@@ -1,3 +1,10 @@
+/**
+ *
+ *This class is responsible for handling the functionality of the fifth question.
+ * Once the user selects an answer and clicks the "Next" button, the user will be
+ * taken to the sixth question
+ */
+
 package krobertson.howigotstarted.questions;
 
 import android.content.Intent;
@@ -8,7 +15,6 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
 import krobertson.howigotstarted.R;
 
@@ -24,11 +30,10 @@ public class QuestionFive extends AppCompatActivity {
         setContentView(R.layout.activity_question_five);
 
         addButtonListener();
-        //nextButtonClicked();
-        //startActivity(new Intent("krobertson.howigotstarted.questions.QuestionFive"));
-
     }
-
+    /*Once the "Next" button is clicked, this method is responsible for making sure the
+    next question is displayed
+     */
     public void addButtonListener() {
 
         radioQuestionFive = (RadioGroup) findViewById(R.id.radioQuestions);
@@ -38,17 +43,11 @@ public class QuestionFive extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-
                 Intent intent = new Intent(QuestionFive.this, QuestionSix.class);
-                //intent.putExtra("username", user);
                 startActivity(intent);
                 finish();
-
             }
 
         });
-
     }
-
-
 }
