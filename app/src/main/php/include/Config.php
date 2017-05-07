@@ -7,9 +7,9 @@ Functions in this class are from https://www.androidtutorialpoint.com/androidwit
  * Database config variables
  */
  
-define("DB_HOST", "mysql13.000webhost.com");
-define("DB_USER", "a2588782_kevron");
-define("DB_PASSWORD", "********");
-define("DB_NAME", "a2588782_higsDB");
+define("DB_HOST", "********.000webhost.com");
+define("DB_USER", "*************");
+define("DB_PASSWORD", "*************");
+define("DB_NAME", "*********_higsDB"); //higs = How I Got Started 
 
 ?>
